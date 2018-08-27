@@ -12,12 +12,7 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
-html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
-
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
   transition: all .4s .3s ease-in; }
 
@@ -391,17 +386,67 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
+.navbar-form {
+  width: 100%; }
 
-.nav ul {
-  list-style: none; }
+.black-filter {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.modal::after {
+  content: "";
+  background: black;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: -300px;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .app-icon {
-  width: 30%; }
+  width: 100px;
+  height: 100px; }
+
+.wider {
+  width: 50%; }
+
+.app-card {
+  background-color: #eee !important; }
+
+input::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFF !important;
+  opacity: 1;
+  /* Firefox */ }
+
+input:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFF !important;
+  opacity: 1;
+  /* Firefox */ }
+
+input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFF !important;
+  opacity: 1;
+  /* Firefox */ }
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FFF !important; }
+
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #FFF !important; }
+
+.home-card {
+  box-shadow: none; }
+
+.active-override {
+  background-color: #5FC3D7; }
+
+.apps-card, .updates-table > td {
+  margin-top: 5px !important; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -429,6 +474,9 @@ textarea {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+.modal-content {
+  z-index: 100; }
 
 @media print {
   * {

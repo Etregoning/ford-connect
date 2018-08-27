@@ -1,0 +1,15 @@
+.black-filter {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal::after {
+    content: "";
+    background: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: -300px;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }

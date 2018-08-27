@@ -1,3 +1,30 @@
 .app-icon {
-    width: 30%;
+    width: 100px;
+    height: 100px;
 }
+
+.wider {
+    width: 50%;
+}
+
+.app-card {
+    background-color: #eee!important;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#FFF!important;
+    opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#FFF!important;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color:#FFF!important;
+}
+
+.home-card{
+    box-shadow: none;
+}
+
